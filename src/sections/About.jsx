@@ -27,9 +27,9 @@ const About = () => {
             />
 
             <div>
-              <p className="grid-headtext">Hi, I’m Adrian Hajdin</p>
+              <p className="grid-headtext">Hi, I’m Harpreet Singh</p>
               <p className="grid-subtext">
-                With 12 years of experience, I have honed my skills in both
+                As a recent postgraduate, I have honed my skills in both
                 frontend and backend dev, creating dynamic and responsive
                 websites.
               </p>
@@ -83,7 +83,7 @@ const About = () => {
                 I’m very flexible with time zone communications & locations
               </p>
               <p className="grid-subtext">
-                I&apos;m based in Rjieka, Croatia and open to remote work
+                I&apos;m based in Jalandhar, Punjab and open to remote work
                 worldwide.
               </p>
               <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
@@ -126,7 +126,7 @@ const About = () => {
                   alt="copy"
                 />
                 <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">
-                  adrian@jsmastery.pro
+                  singh.harpreet.hs012@gmail.com
                 </p>
               </div>
             </div>
