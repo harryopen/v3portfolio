@@ -7,7 +7,7 @@ const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(' adrian@jsmastery.pro');
+    navigator.clipboard.writeText(' harpreet.hs012@gmail.com');
     setHasCopied(true);
 
     setTimeout(() => {
@@ -29,9 +29,8 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hi, I’m Harpreet Singh</p>
               <p className="grid-subtext">
-                As a recent postgraduate, I have honed my skills in both
-                frontend and backend dev, creating dynamic and responsive
-                websites.
+               I am a Full Stack Developer (SDE 1) with 2 years of experience, specializing in both frontend and backend development, and building dynamic, scalable, and responsive web applications.
+
               </p>
             </div>
           </div>
@@ -83,8 +82,7 @@ const About = () => {
                 I’m very flexible with time zone communications & locations
               </p>
               <p className="grid-subtext">
-                I&apos;m based in Jalandhar, Punjab and open to remote work
-                worldwide.
+               I’m based in Bangalore, India and currently working as an SDE 1, open to remote opportunities worldwide.
               </p>
               <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
             </div>
@@ -120,12 +118,13 @@ const About = () => {
 
             <div className="space-y-2">
               <p className="grid-subtext text-center">Contact me</p>
-              <div className="copy-container" onClick={handleCopy}>
+              <div className="  flex items-center gap-2" onClick={handleCopy}>
                 <img
+                  className='h-10 w-5'
                   src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'}
                   alt="copy"
                 />
-                <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">
+                <p className="lg:text-xl md:text-xl font-medium text-gray_gradient text-white">
                   singh.harpreet.hs012@gmail.com
                 </p>
               </div>
