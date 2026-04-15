@@ -31,6 +31,11 @@ const Contact = () => {
       console.log(error);
       alert('your message has been sent');
     }
+    finally{
+      setForm({ name: '', email: '', message: '' });
+      setLoading(false);
+
+    }
   };
 
   return (

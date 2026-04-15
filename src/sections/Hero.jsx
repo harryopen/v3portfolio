@@ -1,31 +1,30 @@
-import { calculateAspectRatio, PerspectiveCamera } from '@react-three/drei';
+import { calculateAspectRatio, PerspectiveCamera } from "@react-three/drei";
 // import { HackerRoom } from "../components/HackerRoom"
-import { Suspense } from 'react';
-import { HackerRoom } from '../components/HackerRoom';
-import CanvasLoader from '../components/CanvasLoader';
-import { Canvas } from '@react-three/fiber';
-import { useMediaQuery } from 'react-responsive';
-import { calculateSizes } from '../constants';
-import Target from '../components/Target';
-import ReactLogo from '../components/ReactLogo';
-import Cube from '../components/Cube';
-import Rings from '../components/Rings';
-import Button from '../components/Button';
+import { Suspense } from "react";
+import { HackerRoom } from "../components/HackerRoom";
+import CanvasLoader from "../components/CanvasLoader";
+import { Canvas } from "@react-three/fiber";
+import { useMediaQuery } from "react-responsive";
+import { calculateSizes } from "../constants";
+import Target from "../components/Target";
+import ReactLogo from "../components/ReactLogo";
+import Cube from "../components/Cube";
+import Rings from "../components/Rings";
+import Button from "../components/Button";
 
 function Hero() {
-
   const isMobile = useMediaQuery({ maxWidth: 768 });
   const isSmall = useMediaQuery({ maxWidth: 440 });
   const isTablet = useMediaQuery({ minWidth: 768, maxwidth: 1024 });
   const sizes = calculateSizes(isSmall, isMobile, isTablet);
   return (
-    <section className="min-h-screen w-full flex flex-col relative">
+    <section className="mt-24 lg:mt-0 min-h-screen w-full flex flex-col relative " id='home'>
       <div className="w-full   mx-auto flex flex-col sm:mt-36 c-space gap-3">
         <p className="  sm:text-3xl text-[15px] font-medium text-white text-center font-generalsans">
           Hi, I am Harpreet Singh <span className="wavy-hand">👋</span>
         </p>
         <p className="hero_tag text-gray_gradient">
-          {' '}
+          {" "}
           Building Full stack Apps,
         </p>
       </div>

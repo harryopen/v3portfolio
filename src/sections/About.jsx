@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Globe from 'react-globe.gl';
 
 import Button from '../components/Button.jsx';
+import TechMarquee from '../components/TechMarque.jsx';
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
@@ -50,6 +51,7 @@ const About = () => {
                 I specialize in a variety of languages, frameworks, and tools
                 that allow me to build robust and scalable applications
               </p>
+                   <TechMarquee/>
             </div>
           </div>
         </div>
@@ -82,7 +84,7 @@ const About = () => {
                 I’m very flexible with time zone communications & locations
               </p>
               <p className="grid-subtext">
-               I’m based in Bangalore, India and currently working as an SDE 1, open to remote opportunities worldwide.
+               I’m based in Bangalore, India and currently working as an Software Engineer, open to remote opportunities worldwide.
               </p>
               <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
             </div>
